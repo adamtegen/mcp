@@ -1,5 +1,11 @@
 # @sveltejs/mcp
 
+## 0.1.6
+
+### Patch Changes
+
+- fix: prevent `imported_runes` suggestion from being added for libs that are not svelte ([`87af64f`](https://github.com/sveltejs/mcp/commit/87af64f4bc6d07b75640eb987a33655654363997))
+
 ## 0.1.5
 
 ### Patch Changes
