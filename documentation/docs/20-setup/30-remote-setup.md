@@ -83,6 +83,7 @@ opencode mcp add
 - Open the command palette
 - Select "View: Open MCP Settings"
 - Click on "Add custom MCP"
+- In the MCP configuration, add the svelte MCP
 
 It will open a file with your MCP servers where you can add the following configuration:
 
@@ -90,11 +91,32 @@ It will open a file with your MCP servers where you can add the following config
 {
 	"mcpServers": {
 		"svelte": {
-			"url": "https://mcp.svelte.dev/mcp"
+      "type": "http",
+			"url": "https://mcp.svelte.dev/mcp",
+      "tools": ["*"]
 		}
 	}
 }
 ```
+
+## GitHub Coding Agent
+
+- Open your repository in GitHub
+- Go to Settings
+- Open CoPilot > Coding agent
+- Edit the MCP configuration
+```json
+{
+   "mcpServers" {
+      "svelte": {
+         "type": "http",
+         "url": "https://mcp.svelte.dev/mcp",
+         "tools": ["*"]
+      }
+   } 
+}
+
+- Click *Save MCP configuration*
 
 ## Other clients
 
